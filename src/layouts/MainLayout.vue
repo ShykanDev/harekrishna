@@ -1,71 +1,96 @@
 <template>
-    <div class="selection:bg-white selection:text-emerald-700">
-        <header class="fixed left-0 right-0 z-50 flex flex-col text-white shadow-lg bg-emerald-700">
-            <!-- Navegación principal -->
-            <nav class="flex items-center justify-between px-4 lg:px-8">
-                <!-- Logo -->
-                <img src="https://medicinaparaansiedad.com/img/logo.png" alt="Logo" class="w-12 lg:w-14" />
-                <!-- Links de navegación -->
-                <div class="flex gap-4 text-sm font-medium lg:text-lg lg:gap-6 font-sour-gummy">
-                    <RouterLink :class="{ 'italic animate-jump-in': route.name === 'home' }" :to="{ name: 'home' }">
-                        Inicio
-                    </RouterLink>
-                    <RouterLink :class="{ 'italic animate-jump-in': route.name === 'beneficts' }"
-                        :to="{ name: 'beneficts' }">
-                        Beneficios
-                    </RouterLink>
-                    <RouterLink :class="{ 'italic animate-jump-in': route.name === 'ingredients' }"
-                        :to="{ name: 'ingredients' }">
-                        Ingredientes
-                    </RouterLink>
-                    <RouterLink :class="{ 'italic animate-jump-in': route.name === 'faqs' }" :to="{ name: 'faqs' }">
-                        Preguntas
-                    </RouterLink>
-                    <a href="https://www.prasadam.mx/" target="_blank" class="hidden hover:text-orange-300 md:block">
-                        Prasadam
-                    </a>
-                </div>
-            </nav>
+    <div class="selection:bg-white selection:text-blue-700">
+        <header class="fixed left-0 right-0 z-50 bg-white shadow-lg">
+  <!-- Navegación principal -->
+  <nav class="flex items-center justify-between px-6 lg:py-1 lg:px-12">
+    <!-- Logo -->
+    <img src="https://medicinaparaansiedad.com/img/logo.png" alt="Logo" class="w-14 lg:w-16" />
+    <!-- Links de navegación -->
+    <div class="flex gap-6 text-sm font-medium text-gray-700 lg:text-base">
+      <RouterLink
+        :class="{ 'border-b-2 border-blue-600 text-blue-700': route.name === 'home' }"
+        :to="{ name: 'home' }"
+        class="transition-colors hover:text-blue-600"
+      >
+        Inicio
+      </RouterLink>
+      <RouterLink
+        :class="{ 'border-b-2 border-blue-600 text-blue-700': route.name === 'beneficts' }"
+        :to="{ name: 'beneficts' }"
+        class="transition-colors hover:text-blue-600"
+      >
+        Historia
+      </RouterLink>
+      <RouterLink
+        :class="{ 'border-b-2 border-blue-600 text-blue-700': route.name === 'ingredients' }"
+        :to="{ name: 'ingredients' }"
+        class="transition-colors hover:text-blue-600"
+      >
+        Cultura
+      </RouterLink>
+      <RouterLink
+        :class="{ 'border-b-2 border-blue-600 text-blue-700': route.name === 'faqs' }"
+        :to="{ name: 'faqs' }"
+        class="transition-colors hover:text-blue-600"
+      >
+        Preguntas
+      </RouterLink>
+      <a
+        href="https://www.prasadam.mx/"
+        target="_blank"
+        class="hidden transition-colors md:block hover:text-blue-600"
+      >
+        Prasadam
+      </a>
+    </div>
+  </nav>
 
-            <!-- Información de contacto -->
-            <div
-                class="flex-col hidden gap-4 px-4 py-3 text-xs lg:flex lg:flex-row lg:items-center lg:justify-evenly lg:text-base bg-emerald-800">
-                <!-- Dirección -->
-                <div class="flex items-center gap-2">
-                    <v-icon name="md-locationon" class="text-emerald-300" scale="1.5" />
-                    <a href="https://www.google.com.mx/maps/place/Gutenberg+128,+Anzures,+Miguel+Hidalgo,+11590+Ciudad+de+M%C3%A9xico,+CDMX/@19.4322888,-99.1760704,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1f8b32758939b:0xf34fbd07bc47d6dd!8m2!3d19.4322888!4d-99.1760704!16s%2Fg%2F11c4n3lm2g?entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D"
-                        target="_blank" class="hover:text-emerald-400">
-                        Gutenberg #128 Anzures, Miguel Hidalgo, 11590 Ciudad de México
-                    </a>
-                </div>
+  <!-- Información de contacto -->
+  <div class="justify-center hidden gap-8 py-2 text-sm text-gray-600 lg:flex bg-blue-50">
+    <!-- Dirección -->
+    <div class="flex items-center gap-2">
+      <v-icon name="md-locationon" class="text-blue-600" scale="1.2" />
+      <a
+        href="https://www.google.com.mx/maps/place/Gutenberg+128,+Anzures,+Miguel+Hidalgo,+11590+Ciudad+de+M%C3%A9xico,+CDMX"
+        target="_blank"
+        class="hover:text-blue-700"
+      >
+        Gutenberg #128 Anzures, Miguel Hidalgo, 11590 Ciudad de México
+      </a>
+    </div>
+    <!-- Teléfonos -->
+    <div class="flex items-center gap-2">
+      <v-icon name="bi-telephone-fill" class="text-blue-600" scale="1.2" />
+      <a href="tel:+525563950178" class="hover:text-blue-700">
+        +52 55 6395 0178
+      </a>
+    </div>
+    <div class="flex items-center gap-2">
+      <v-icon name="bi-telephone-fill" class="text-blue-600" scale="1.2" />
+      <a href="tel:+525563950179" class="hover:text-blue-700">
+        +52 55 6395 0179
+      </a>
+    </div>
+    <!-- WhatsApp -->
+    <div class="flex items-center gap-2">
+      <v-icon name="co-whatsapp" class="text-blue-600" scale="1.2" />
+      <a
+        href="https://wa.me/525562516687"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-blue-700"
+      >
+        +52 5562516687
+      </a>
+    </div>
+  </div>
+</header>
 
-                <!-- Teléfonos -->
-                <div class="flex items-center gap-2">
-                    <v-icon name="bi-telephone-fill" class="text-emerald-300" scale="1.5" />
-                    <a href="tel:+525563950178" class="font-bold hover:text-emerald-400">
-                        +52 55 6395 0178
-                    </a>
-                    <v-icon name="bi-telephone-fill" class="text-emerald-300" scale="1.5" />
-                    <a href="tel:+525563950179" class="font-bold hover:text-emerald-400">
-                        +52 55 6395 0179
-                    </a>
-                </div>
-
-                <!-- WhatsApp -->
-                <div class="flex items-center gap-2">
-                    <v-icon name="co-whatsapp" class="text-emerald-300" scale="1.5" />
-                    <a href="https://wa.me/525562516687" target="_blank" rel="noopener noreferrer"
-                        class="font-bold hover:text-emerald-400">
-                        +52 5562516687
-                    </a>
-                </div>
-            </div>
-        </header>
 
         <main class="lg:pt-[107px] pt-9">
             <slot name="main" />
         </main>
-        <footer class="relative flex flex-col items-center gap-6 p-6 text-white bg-emerald-700 font-sour-gummy lg:p-10">
+        <footer class="relative flex flex-col items-center gap-6 p-6 text-blue-700 bg-sky-50 font-sour-gummy lg:p-10">
             <!-- Contact Title -->
             <h2 class="text-2xl font-bold lg:text-4xl">Contacto</h2>
 
@@ -140,7 +165,8 @@
 
 <script lang="ts" setup>
 import { useRoute } from 'vue-router';
-
+import AOS from 'aos';
+AOS.init();
 const route = useRoute();
 </script>
 

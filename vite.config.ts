@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/medicinaparahemorroides/',
+  base: '/harekrishna/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

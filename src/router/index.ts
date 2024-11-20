@@ -15,12 +15,12 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
-      path: '/beneficios',
+      path: '/historia',
       name: 'beneficts',
       component: () => import('../views/BenefictsView.vue'),
     },
     {
-      path: '/ingredientes',
+      path: '/cultura',
       name: 'ingredients',
       component: () => import('../views/IngredientsView.vue'),
     },

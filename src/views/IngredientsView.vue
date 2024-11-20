@@ -2,47 +2,187 @@
     <div class="">
         <MainLayout >
             <template #main>
-              <h1 class="py-8 text-4xl font-bold text-center rounded-lg shadow-lg text-cyan-900 bg-gradient-to-r from-emerald-100 via-white to-emerald-100 font-poppins">
-  Conozca los ingredientes <span class="text-cyan-600">NATURALES</span> que <span class="underline decoration-cyan-600">PILOGUARD</span> le ofrece para las <span class="text-cyan-600">HEMORROIDES</span>
+              <h1 class="py-8 text-4xl font-bold text-center rounded-lg shadow-lg text-slate-900 font-poppins">
+  Conozca la <span class="text-emerald-600">Cultura</span> detras de <span class="underline decoration-cyan-600">Hare Krishna</span> <span class="text-cyan-600"></span>
 </h1>
-                <div class="grid grid-cols-3">
-                <img class="animate-flip-up" src="https://i.ibb.co/j53jSP7/right-Bottle.png" alt="">
-                <img class="animate-flip-up" src="https://i.ibb.co/p369gXp/image-1-removebg-preview.png" alt="">
-                <img class="animate-flip-up" src="https://i.ibb.co/GF34xB8/image-2-removebg-preview.png" alt="">
-              </div>
-                <section class="flex flex-wrap justify-between gap-5 p-4 font-poppins">
-  <div class="flex-1 sm:flex-1 md:flex-1 lg:w-1/2">
-    <h3 class="mb-4 text-xl font-semibold">Características del Producto</h3>
-    <ul class="p-0 list-none">
-      <li><strong>Cantidad de Cápsulas:</strong> 60 cápsulas por envase</li>
-      <li><strong>Tamaño de la Porción:</strong> 1 cápsula</li>
-      <li><strong>Modo de Uso:</strong> Tomar 1 cápsula de 1 a 2 veces al día, preferiblemente con comida o según lo indique un profesional de la salud.</li>
-      <li><strong>Almacenamiento:</strong> Mantener en un lugar fresco y seco, lejos de la luz solar directa.</li>
-      <li><strong>Advertencias:</strong> Consultar a un profesional de la salud si está embarazada o en período de lactancia. Mantener fuera del alcance de los niños.</li>
-      <li><strong>Categoría:</strong> Suplemento dietético</li>
-    </ul>
-  </div>
-  <div class="flex-1 sm:flex-1 md:flex-1 lg:w-1/2">
-    <h3 class="mb-4 text-xl font-semibold">Resumen de Ingredientes</h3>
-    <ul class="p-0 list-none">
-  <li><span class="font-bold">Khacir Ext. (Acacia catechu) 🌿</span> Alivia la inflamación y promueve la cicatrización de los tejidos dañados en la zona anal, proporcionando alivio en las hemorroides.</li>
-  <li><span class="font-bold">Apamarg Ext. (Achyranthes aspera) 🌱</span> Mejora la circulación sanguínea, reduce la hinchazón y alivia la congestión venosa, ayudando a disminuir la presión en las venas hemorroidales.</li>
-  <li><span class="font-bold">Kumari Ext. (Aloe vera) 🍃</span> Calma, hidrata y reduce la inflamación en la zona afectada, proporcionando alivio del dolor y la irritación de las hemorroides.</li>
-  <li><span class="font-bold">Kovida Ext. (Bauhinia variegata) 🌳</span> Ayuda a tonificar los vasos sanguíneos, reduciendo el sangrado y fortaleciendo las venas afectadas por las hemorroides.</li>
-  <li><span class="font-bold">Chitrak Ext. (Plumbago zeylanica) 🌾</span> Mejora la digestión y reduce la inflamación en la zona afectada, aliviando la presión y el dolor asociado con las hemorroides.</li>
-  <li><span class="font-bold">Daruharidra Ext. (Berberis aristata) 🌱</span> Propiedades antiinflamatorias que ayudan a reducir la inflamación y el dolor, aliviando los síntomas de las hemorroides.</li>
-  <li><span class="font-bold">Neem Ext. (Azadirachta indica) 🍃</span> Antiinflamatorio natural que ayuda a reducir la irritación y previene infecciones en la zona anal afectada por hemorroides.</li>
-  <li><span class="font-bold">Castor Ext. (Ricinus communis) 🌿</span> Alivia el dolor y la inflamación, promoviendo la curación de los tejidos dañados y reduciendo el malestar asociado con las hemorroides.</li>
-  <li><span class="font-bold">Dhataki Ext. (Woodfordia fruticosa) 🌱</span> Propiedades calmantes y antiinflamatorias que ayudan a aliviar el dolor y la irritación en la zona afectada por las hemorroides.</li>
-  <li><span class="font-bold">Haridra Ext. (Curcuma longa) 🍃</span> Potente antiinflamatorio que reduce la inflamación, el dolor y la irritación, favoreciendo la recuperación de las hemorroides.</li>
-  <li><span class="font-bold">Probiótico 🦠</span> Restaura el equilibrio de la flora intestinal, mejorando la digestión y reduciendo la inflamación en la zona afectada por las hemorroides.</li>
-</ul>
-
-  </div>
+             
+<section>
+  
+  <div class="p-6 bg-gray-100" id="app">
+   <section class="p-6 bg-white rounded-lg shadow-lg">
+    <h1 class="mb-4 text-3xl font-bold font-poppins">
+     Cultura de Hare Krishna
+    </h1>
+    <p class="mb-4 font-poppins">
+     La Cultura de Hare Krishna se basa en las enseñanzas del Bhagavad-gītā y el Śrīmad Bhāgavatam, textos sagrados de la India antigua. Esta Cultura enfatiza la devoción y el servicio a Krishna, la Suprema Personalidad de Dios.
+    </p>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+     <div>
+      <img alt="Imagen de devotos de Hare Krishna cantando y bailando en una calle concurrida" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/bynUx8Bm4Z4SNNysa2qkeN3wjdlwymaEHcDOx8fkDMl0VBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       El canto y baile en público es una forma de difundir el mensaje de Krishna y atraer a las personas a la conciencia de Krishna. Esta práctica, conocida como Sankirtana, es una de las actividades más visibles y alegres de los devotos.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un altar de Hare Krishna con deidades decoradas con flores y luces" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/GerTqGfe3TfCfjSJ5fDFZj0UyLRWWi0ahuf4omtq11oXeVBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Los altares son lugares sagrados donde los devotos ofrecen oraciones y realizan rituales para honrar a las deidades. Las deidades son tratadas con gran respeto y amor, y se les ofrecen alimentos, flores y otros artículos como una forma de servicio devocional.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna en una sesión de estudio de textos sagrados" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/fJItDwzqju0sEaUqur554fcSsXp7jFqTMR48e47gBW3LsCmnA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       El estudio de los textos sagrados es fundamental para comprender y aplicar las enseñanzas de Krishna en la vida diaria. Los devotos se reúnen regularmente para leer y discutir el Bhagavad-gītā y el Śrīmad Bhāgavatam, profundizando así su conocimiento y devoción.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de una ceremonia de adoración en un templo de Hare Krishna" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/wmB1HxtW7MoFIhVBGTHrpZS6OwHg0bAOjXdqmqv9u9keqg5JA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Las ceremonias de adoración incluyen cantos, ofrendas y rituales que ayudan a los devotos a conectarse con Krishna. Estas ceremonias, conocidas como Arati, se realizan varias veces al día y son momentos de profunda devoción y meditación.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de devotos de Hare Krishna distribuyendo libros sagrados en una plaza pública" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/BBMIQfKueitan0bbqZELQwumwF29xNGeARfyKvbNolyPYFMPB.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La distribución de libros es una actividad importante para difundir el conocimiento espiritual y las enseñanzas de Krishna. Los devotos creen que compartir estos textos puede ayudar a las personas a encontrar paz y propósito en sus vidas.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de una festividad de Hare Krishna con devotos reunidos en un parque" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/flgOQqv6QyXiUy0e6Va7i5CNt1cEEa7yaSkZWIEMZvduVBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Las festividades son momentos de celebración y unión para los devotos, donde se realizan cantos, danzas y banquetes. Estas celebraciones, como el Ratha Yatra, son oportunidades para compartir la alegría de la devoción con la comunidad.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna meditando en un lugar tranquilo" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/Q7ePqjSiA3xwPSHiRJa06K5eMYBMbhPw2upkL2lTOpQ5VBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La meditación es una práctica esencial para alcanzar la paz interior y la conexión espiritual con Krishna. Los devotos practican la meditación en el mantra Hare Krishna, que se cree que purifica la mente y el corazón.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un templo de Hare Krishna iluminado por la noche" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/mzFPUei89yzFKKKjkisvLTPibwbhsydKhq05nvFB9RNfVBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Los templos son centros de devoción y espiritualidad, donde los devotos se reúnen para adorar y aprender. Estos lugares sagrados están diseñados para inspirar y elevar la conciencia de los visitantes.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de devotos de Hare Krishna preparando comida vegetariana en una cocina comunitaria" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/fLOn7TEnZIRqZCB9ACxa0YKrbOLrW02wLZemnkjEFDZwVBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La preparación y distribución de comida vegetariana es una forma de servicio y compasión hacia los demás. Los devotos creen que ofrecer alimentos puros y sagrados puede beneficiar tanto al cuerpo como al alma.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna tocando el tambor en una ceremonia" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/PlImgCUbELbiNRoyNdWkY0heBLelkzVc9iDVspUsSbgsVBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La música y los instrumentos son una parte integral de las ceremonias y festividades de Hare Krishna. El sonido del tambor y otros instrumentos se utiliza para crear un ambiente espiritual y elevar la conciencia.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna realizando una procesión en una calle" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/KLnufjYMTnW4VqWpeRSzUSNibqSY6fRW4hWjU5biikrvrCmnA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Las procesiones son eventos públicos donde los devotos cantan y bailan para difundir el mensaje de Krishna. Estas procesiones son una forma de llevar la espiritualidad a las calles y conectar con la comunidad.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna ofreciendo flores en un altar" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/ThzgAj5NRuYvKhVtqh1eTF0Zg0sFfxuxhbfUfP5jVZfVwKYeE.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Ofrecer flores es un acto de devoción y respeto hacia las deidades en la tradición de Hare Krishna. Este acto simboliza la pureza y la belleza de la devoción.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna cantando en un templo" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/G36NMrZMSI6CFFROYXcIt8bm6UrFH6aVdPfLdrwaZMB7qg5JA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       El canto congregacional es una práctica común que fortalece la comunidad y la devoción. Los devotos se reúnen para cantar el mantra Hare Krishna, creando una atmósfera de unidad y espiritualidad.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna leyendo un libro sagrado en un parque" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/iuNq1ltkAfWzOK6cnU5wU5vAjBG0v7OK1SJgqb53he5frCmnA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La lectura de textos sagrados en la naturaleza puede profundizar la conexión espiritual y la comprensión de las enseñanzas. Los devotos encuentran paz y claridad al estudiar las escrituras en un entorno natural.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna realizando una ceremonia de fuego" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/TCJj89vDIqJrPZEbvYIVQGrxIk9q70dZTDQ3R855GgtcVw8E.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Las ceremonias de fuego son rituales sagrados que purifican y elevan la conciencia espiritual. Estas ceremonias, conocidas como Yajnas, son una forma de ofrecer oraciones y gratitud a Krishna.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de devotos de Hare Krishna distribuyendo prasadam (comida sagrada) en un evento comunitario" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/7UgZrThEMU4sAdbhdOcEdg4meuSAUIS5fF0h53QAmJH8nBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La distribución de prasadam, o comida sagrada, es una forma de compartir bendiciones y amor con la comunidad. Los devotos creen que el prasadam tiene el poder de purificar y elevar a quienes lo consumen.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna tocando la flauta en un entorno natural" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/FmVmMAsMomKKLNK26J1FRcPyCFMqWmj3u1LGtdztplfKvg5JA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Tocar la flauta es una forma de meditación y devoción en la tradición de Hare Krishna. La música suave y melodiosa de la flauta se asocia con Krishna, quien es conocido por tocar la flauta divinamente.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna realizando una danza tradicional en un festival" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/7GEUNrDo97aOPNUsRwyMA6piIbXMDMXl8NwreeFCXIqbfCmnA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Las danzas tradicionales son una expresión de alegría y devoción en los festivales de Hare Krishna. Estas danzas son una forma de celebrar y honrar a Krishna a través del movimiento y la música.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna ofreciendo incienso en un altar" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/xoPcjrokMey5ZarvCopZwko0UKE1tr8p8XhWwj4ANb02vg5JA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Ofrecer incienso es un acto de purificación y devoción en la tradición de Hare Krishna. El aroma del incienso se cree que purifica el ambiente y eleva la conciencia espiritual.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna realizando una ceremonia de baño de deidades" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/9HG1c0u7vj51CpuLftwfeVViMuAJnGZnAPjmTXfT3Oo9fLYeE.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La ceremonia de baño de deidades, conocida como Abhisheka, es un ritual sagrado que simboliza la purificación y el amor devocional. Los devotos bañan las deidades con agua, leche y otros líquidos sagrados.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de devotos de Hare Krishna cantando en un evento al aire libre" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/pmU5DJsDIvbXH95r3gnY8LZMAIiN5jAVnIuhBznNmRcmYw8E.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Cantar en eventos al aire libre es una forma de llevar la espiritualidad a la comunidad y compartir el mensaje de Krishna. Estos eventos son oportunidades para que las personas experimenten la alegría y la paz de la devoción.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna ofreciendo lámparas de ghee en una ceremonia" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/2UyElsHCEfUlVqKDSDwBp4znKSGufACBgeSWYplB2v4FFDmnA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Ofrecer lámparas de ghee es un acto de devoción y gratitud en las ceremonias de Hare Krishna. La luz de las lámparas simboliza la iluminación espiritual y la presencia divina.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna realizando una ceremonia de fuego en un templo" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/gTX4deqnpZ3ZfkZWYM8AieUGalchhRicWkeE1eXvI49PVMYeE.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Las ceremonias de fuego en los templos son momentos de profunda devoción y meditación. Los devotos ofrecen oraciones y ofrendas en el fuego sagrado, buscando purificación y bendiciones.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de devotos de Hare Krishna distribuyendo ropa y alimentos a personas necesitadas" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/c5NEkdjWwXpTPJSCn6i6meK3RYm4znnuvDpwQe6tZpJyiBzTA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La distribución de ropa y alimentos a personas necesitadas es una forma de servicio y compasión en la Cultura de Hare Krishna. Los devotos creen en ayudar a los demás como una expresión de amor y devoción a Krishna.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un devoto de Hare Krishna tocando el harmonium en una ceremonia" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/Nx9zSNcjTqLWO1D5UAFgzC6G22eRzoB5S0I34IiKJklcxg5JA.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       Tocar el harmonium es una práctica común en las ceremonias de Hare Krishna. La música del harmonium acompaña los cantos devocionales, creando una atmósfera espiritual y elevadora.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de un grupo de devotos de Hare Krishna realizando una ceremonia de ofrenda de alimentos" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/lJXRSW4gut7hDVJKxgjFBkA99lUEDdyuuYRWoK6oz3cwYw8E.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La ofrenda de alimentos, conocida como Bhoga, es una práctica devocional en la que los devotos preparan y ofrecen alimentos a Krishna antes de consumirlos. Este acto simboliza la gratitud y la devoción.
+      </p>
+     </div>
+     <div>
+      <img alt="Imagen de devotos de Hare Krishna realizando una ceremonia de purificación con agua sagrada" class="w-full rounded-lg shadow-md"  src="https://storage.googleapis.com/a1aa/image/Z9brroSVpPaqBlxIldQOnJic6IFJUCQ8yLhMQ7LqlNCyYw8E.jpg" width="400"/>
+      <p class="mt-2 text-gray-600 font-poppins">
+       La ceremonia de purificación con agua sagrada es un ritual que simboliza la limpieza y la renovación espiritual. Los devotos utilizan agua sagrada para purificar el cuerpo y el alma.
+      </p>
+     </div>
+    </div>
 </section>
-            <section class="flex flex-wrap justify-around gap-4 p-4 animate-fade-up">
-                <IngredientCard v-for="ingredient in ingredients" :key="ingredient.title" :title="ingredient.title" :smallIntro="ingredient.shortResume" :description="ingredient.longResume" :tags="ingredient.listTitles" :listTitles="ingredient.listTitles" :listContent="ingredient.listContent" :imgSrc="ingredient.imgSrc" />
-            </section>
+</div>
+</section>
             </template>
         </MainLayout>
     </div>
