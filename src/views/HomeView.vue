@@ -6,23 +6,59 @@
         <!-- header title -->
         <article class="flex flex-col items-center justify-center mt-5">
           <!-- Título con estilo llamativo -->
-          <h1 class="relative flex mb-6 text-4xl font-extrabold text-center sm:text-5xl lg:text-6xl text-cyan-800">
+          <h1 class="relative flex mb-6 text-4xl font-extrabold text-center font-sour-gummy sm:text-5xl lg:text-6xl text-cyan-700 animate-flip-up">
             <img class="w-14"
               src="https://storage.googleapis.com/a1aa/image/fO5eCOzsRedFeTyU7imln4fjnsv0vP1cmBTUTc0giaYhgkXeE.jpg"
               alt="">
-            CONOZCA EL HAREKRISHNA
+            CONOZCA EL HARE KRISHNA
             <span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-cyan-400 to-cyan-600"></span>
             <img class="w-14"
               src="https://storage.googleapis.com/a1aa/image/Edq99IcOZKIkDRoUe3U6KmzfCtmfAVI0j2vBOGzeXkF6vxLPB.jpg"
               alt="">
           </h1>
-
+          <article class="w-full">
+            <HareSlider/>
+          </article>
           <!-- Contenedor de imagen con listas dentro -->
-          <div class="w-full overflow-hidden rounded-lg shadow-xl ">
+          <div class="w-full overflow-hidden rounded-lg shadow-xl animate-fade-up">
             <img src="../assets/mainImg.jpg" alt="Hare Krishnaaaa"  />
-
           </div>
         </article>
+
+        <article class="flex flex-wrap justify-around w-full gap-3 my-3">
+            <LiveCard :title="'Templo Sri Krishna Balaram, Vrindavan, India.'" description="Transmisión en vivo desde el Templo ISKCON Vrindavan, situado a orillas del río Yamuna en Vrindavan, India." href-link="https://iskconvrindavan.com/live-darshan" image="https://static.toiimg.com/thumb/msid-111548272,width-1070,height-580,imgsize-2596576,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"/>
+            <LiveCard title="Templo ISKCON Juhu, Mumbai, India." description="Transmisión en vivo desde el  Templo ISKCON Juhu, uno de los templos más importantes de la India." image="https://storage.googleapis.com/a1aa/image/ukdCv4QToAIcHVLgo9D64X4tMFfspwawjWBteFQ2ACelGimnA.jpg" href-link="https://www.iskconmumbai.com/live"/>
+            <LiveCard title="Templo ISKCON Vaikuntha Hill,Bengaluru, India." href-link="https://www.iskconbangalore.org/live-darshan/" image="https://media3.giphy.com/media/48HUcXwM5Yt6E/200.webp?cid=ecf05e4724yzc1mq3uq9926zuorktul87khj98nr6ucfdzo4&ep=v1_gifs_search&rid=200.webp&ct=g" description="Transmisión en vivo desde el Templo ISKCON Vaikuntha Hill, ubicado en la ciudad de Bengaluru, India."/>
+        </article>
+        <section class="flex justify-center w-full p-6 my-6 space-x-4">
+          <div class="max-w-4xl p-6 bg-white rounded-lg shadow-lg md:flex md:flex-row md:items-center">
+   <img alt="Imagen de una persona cantando Hare Krishna con un fondo sereno" class="w-full h-auto mb-4 rounded-lg md:w-1/3 md:mb-0 md:mr-6" height="300" src="https://storage.googleapis.com/a1aa/image/ENu4Z8DXxNa6AFKmj0pPdSBb3zFDS5NGhjwuRwOZ44Aiw08E.jpg" width="300"/>
+   <div class="md:flex-1">
+    <h2 class="mb-2 text-2xl font-bold">
+     Hare Krishna
+    </h2>
+    <p class="mb-4 text-gray-600">
+     Significado 
+    </p>
+    <p class="mb-4 text-gray-700">
+     El mantra Hare Krishna, también conocido como el Maha Mantra, es un mantra vaisnava de 16 palabras mencionado en el Kali-Santarana Upanishad. Es un canto que se cree que trae un estado superior de conciencia y despertar espiritual.
+    </p>
+    <p class="mb-4 text-gray-700">
+     El mantra está compuesto por los nombres sánscritos del Ser Supremo en la tradición vaisnava: "Hare," "Krishna," y "Rama." Cantar este mantra es una forma de conectarse con lo divino y es una práctica central en el movimiento Hare Krishna.
+    </p>
+    <p class="mb-4 text-gray-700">
+     El mantra completo es: "Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare, Hare Rama, Hare Rama, Rama Rama, Hare Hare."
+    </p>
+    <div class="flex justify-end">
+     <a class="text-blue-500 hover:underline" href="https://es.wikipedia.org/wiki/Asociaci%C3%B3n_Internacional_para_la_Conciencia_de_Krishna" target="_blank">
+      Aprende más
+      <i class="fas fa-external-link-alt">
+      </i>
+     </a>
+    </div>
+   </div>
+  </div>
+        </section>
         <div class="w-full h-[1px] my-4 bg-cyan-800" />
 
         <section class="flex flex-col items-center">
@@ -178,17 +214,23 @@
       </template>
     </MainLayout>
   </div>
+
 </template>
 
 <script lang="ts" setup>
 import CardInfoSm from '@/components/CardInfoSm.vue';
+import HareSlider from '@/components/HareSlider.vue';
+import LiveCard from '@/components/LiveCard.vue';
 import NewsCard from '@/components/NewsCard.vue';
 import MainLayout from '@/layouts/MainLayout.vue';
 import AOS from 'aos';
+import { ref } from 'vue';
+import { onMounted } from 'vue';
 AOS.init();
 
+
 const info1 = {
-  title: "Bienvenido al Mundo Hare Krishna",
+  title: "Hare Krishna en el Mundo",
   content: "El movimiento Hare Krishna, también conocido como la Sociedad Internacional para la Conciencia de Krishna (ISKCON), es una tradición espiritual basada en la devoción a Krishna, una de las deidades más veneradas del hinduismo. Este movimiento promueve la paz interior, el amor universal y la conexión espiritual a través del canto del santo nombre de Dios, el mantra Hare Krishna.",
   content2: "Hare Krishna es un camino hacia la paz y la trascendencia, y ha tocado miles de vidas en todo el mundo, brindando un sentido de comunidad, devoción y realización espiritual."
 };
@@ -287,4 +329,8 @@ const info7 = {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+
+
+
+</style>

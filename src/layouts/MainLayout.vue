@@ -1,10 +1,10 @@
 <template>
     <div class="selection:bg-white selection:text-blue-700">
-        <header class="fixed left-0 right-0 z-50 bg-white shadow-lg">
+        <header class="fixed left-0 right-0 z-50 py-3 shadow-lg md:py-0 bg-slate-50">
   <!-- Navegación principal -->
   <nav class="flex items-center justify-between px-6 lg:py-1 lg:px-12">
     <!-- Logo -->
-    <img src="https://medicinaparaansiedad.com/img/logo.png" alt="Logo" class="w-14 lg:w-16" />
+    <img src="https://medicinaparaansiedad.com/img/logo.png" alt="Logo" class="hidden w-14 md:block lg:w-16" />
     <!-- Links de navegación -->
     <div class="flex gap-6 text-sm font-medium text-gray-700 lg:text-base">
       <RouterLink
@@ -29,6 +29,13 @@
         Cultura
       </RouterLink>
       <RouterLink
+        :class="{ 'border-b-2 border-blue-600 text-blue-700': route.name === 'products' }"
+        :to="{ name: 'products' }"
+        class="transition-colors hover:text-blue-600"
+      >
+        Productos
+      </RouterLink>
+      <RouterLink
         :class="{ 'border-b-2 border-blue-600 text-blue-700': route.name === 'faqs' }"
         :to="{ name: 'faqs' }"
         class="transition-colors hover:text-blue-600"
@@ -42,11 +49,12 @@
       >
         Prasadam
       </a>
+
     </div>
   </nav>
 
   <!-- Información de contacto -->
-  <div class="justify-center hidden gap-8 py-2 text-sm text-gray-600 lg:flex bg-blue-50">
+  <div class="justify-center hidden gap-8 py-2 text-sm text-gray-600 lg:flex bg-slate-100">
     <!-- Dirección -->
     <div class="flex items-center gap-2">
       <v-icon name="md-locationon" class="text-blue-600" scale="1.2" />
@@ -158,16 +166,37 @@
                     Design: <strong class="font-normal">PACA</strong>
                 </p>
             </div>
+            <!-- Audio -->
+            <audio  controls ref="audioElement" id="audio"  loop volume="0.009">
+                 <source src="../assets/mantraHareR.mp3" type="audio/mp3">
+               </audio>
         </footer>
-
     </div>
 </template>
 
 <script lang="ts" setup>
 import { useRoute } from 'vue-router';
 import AOS from 'aos';
+import { onMounted, ref } from 'vue';
 AOS.init();
 const route = useRoute();
+const audioElement = ref(null);
+
+let isMounted = ref(false);
+onMounted(() => {
+  isMounted.value = true;
+  
+  // Configura el volumen del audio
+  if (audioElement.value) {
+    audioElement.value.volume = 0.2;
+    
+    // Intentar reproducir el audio de manera automática
+    audioElement.value.play().catch((error) => {
+      console.error('No se pudo reproducir el audio automáticamente:', error);
+    });
+  }
+});
+
 </script>
 
 <style scoped></style>

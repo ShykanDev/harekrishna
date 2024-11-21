@@ -13,6 +13,8 @@ export default {
         'poppins': ['Poppins', 'sans-serif'],
         'sour-gummy': ['Sour Gummy', 'cursive'],
         'funnel-display': ['Funnel Display'],
+
+        'oleo-script': ['Oleo Script', 'cursive'],
       },
     },
   },

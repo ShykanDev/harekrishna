@@ -28,8 +28,12 @@ const router = createRouter({
       path: '/preguntas',
       name: 'faqs',
       component: () => import ('../views/FaqsView.vue')
+    },
+    {
+      path: '/productos',
+      name: 'products',
+      component: () => import ('../views/ProductsView.vue')
     }
-
   ],
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }

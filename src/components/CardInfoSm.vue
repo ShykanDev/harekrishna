@@ -66,10 +66,19 @@ const props = defineProps({
  * Envuelve la palabra "gastritis" en un <strong>.
  */
 const highlightGastritis = (text: string) => {
-  return text.replace(/gastritis/gi, '<strong class="italic text-rose-800 font-sour-gummy">GASTRITIS</strong>');
+  return text.replace(/Hare Krishna/gi, '<strong class="text-3xl text-cyan-600 font-oleo-script">Hare Krishna</strong>').replace(/krishna/gi, '<strong class="text-3xl italic text-cyan-600 font-oleo-script">Krishna</strong>').replace(/Hare/gi, '<strong class="text-3xl italic text-cyan-600 font-oleo-script">Hare</strong>').replace(/Rama/gi, '<strong class="text-3xl italic text-cyan-600 font-oleo-script">Rama</strong>');
 };
 </script>
 
 <style scoped>
 /* Estilos personalizados */
 </style>
+
+<!-- 
+https://krishnastore.com/images/cache/Incense_variety_Pack_1-200x216.jpg
+Masala INcense Variety Pack 
+https://krishnastore.com/images/cache/seven-star-masala-incense-pack-200x216.jpg
+Seven Masala Oncense variety Pack
+
+
+-->
