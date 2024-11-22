@@ -1,12 +1,15 @@
 <template>
-    <div class="selection:bg-white selection:text-blue-700">
+    <div class="selection:bg-white selection:text-blue-700 overflow-hidden">
         <header class="fixed left-0 right-0 z-50 py-3 shadow-lg md:py-0 bg-slate-50">
   <!-- Navegación principal -->
-  <nav class="flex items-center justify-between px-6 lg:py-1 lg:px-12">
+  <nav class="flex relative items-center justify-between px-6 lg:py-1 lg:px-12">
+    <img src="../assets/ssl-certificate.png" class="absolute w-11 right-0 -top-2-0 md:top-8 md:right-1 lg:hidden "  alt="">
     <!-- Logo -->
     <img src="https://medicinaparaansiedad.com/img/logo.png" alt="Logo" class="hidden w-14 md:block lg:w-16" />
+    <p :class="{'animate-fade-up' : mainUrl === 'harekrishna.com.mx', 'animate-fade-down' : mainUrl === 'radhakrishna.com.mx'}"  class="hidden text-3xl text-sky-700 font-semibold font-funnel-display md:block animate-delay-500">{{ mainUrl }}</p>
     <!-- Links de navegación -->
-    <div class="flex gap-6 text-sm font-medium text-gray-700 lg:text-base">
+    <div class="flex gap-3 md:gap-5  text-sm font-medium text-gray-700 lg:text-base">
+
       <RouterLink
         :class="{ 'border-b-2 border-blue-600 text-blue-700': route.name === 'home' }"
         :to="{ name: 'home' }"
@@ -54,7 +57,9 @@
   </nav>
 
   <!-- Información de contacto -->
-  <div class="justify-center hidden gap-8 py-2 text-sm text-gray-600 lg:flex bg-slate-100">
+  <div class="justify-center relative hidden gap-8 py-2 text-sm text-gray-600 lg:flex bg-slate-100">
+    <img src="../assets/ssl-certificate.png" class="absolute w-11 right-0 top-0"  alt="">
+
     <!-- Dirección -->
     <div class="flex items-center gap-2">
       <v-icon name="md-locationon" class="text-blue-600" scale="1.2" />
@@ -197,6 +202,25 @@ onMounted(() => {
   }
 });
 
+let mainUrl = ref('harekrishna.com.mx')
+
+let timeout = ref(null);
+const toggleTitle = () => {
+  if (timeout.value) {
+    clearTimeout(timeout.value);
+  }
+  timeout.value = setInterval(() => {
+    if(mainUrl.value === 'harekrishna.com.mx'){
+      mainUrl.value = 'radhakrishna.com.mx';
+    } else {
+      mainUrl.value = 'harekrishna.com.mx';
+    }
+  }, 3000);
+}
+
+onMounted(() => {
+  toggleTitle();
+})
 </script>
 
 <style scoped></style>

@@ -7,7 +7,9 @@
 </h1>
              
 <section>
-  
+  <article class="w-full">
+            <HareSlider/>
+          </article>
   <div class="p-6 bg-gray-100" id="app">
    <section class="p-6 bg-white rounded-lg shadow-lg">
     <h1 class="mb-4 text-3xl font-bold font-poppins">
@@ -189,6 +191,7 @@
 </template>
 
 <script lang="ts" setup>
+import HareSlider from '@/components/HareSlider.vue';
 import IngredientCard from '@/components/IngredientCard.vue';
 import MainLayout from '@/layouts/MainLayout.vue';
 const ingredients = [

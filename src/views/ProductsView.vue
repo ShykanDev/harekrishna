@@ -6,9 +6,10 @@
                     IMPORTACION <span class="text-sky-600">DIRECTA</span> DE LA INDIA POR <span
                         class="text-cyan-600">MAYOREO</span>
                 </h1>
+                <article class="w-full">
+            <HareSlider/>
+          </article>
                 <h3 class="py-8 text-4xl font-semibold text-center rounded-lg text-slate-700">Todo tipo de producto para ceremonia, somos importadores directos de la India</h3>
-                <article>
-                </article>
                 <section class="flex flex-wrap justify-around w-full gap-4 p-3">
                     <ProductCard v-for="product in products" :title="product.title" :imgSrc="product.imgSrc"
                         :description="product.description" />
@@ -20,6 +21,7 @@
 </template>
 
 <script lang="ts" setup>
+import HareSlider from '@/components/HareSlider.vue';
 import ProductCard from '@/components/ProductCard.vue';
 import MainLayout from '@/layouts/MainLayout.vue';
 

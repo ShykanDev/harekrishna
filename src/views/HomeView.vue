@@ -21,7 +21,7 @@
           </article>
           <!-- Contenedor de imagen con listas dentro -->
           <div class="w-full overflow-hidden rounded-lg shadow-xl animate-fade-up">
-            <img src="../assets/mainImg.jpg" alt="Hare Krishnaaaa"  />
+            <img src="../assets/mainImg.jpg" alt="Hare Krishna"  />
           </div>
         </article>
 

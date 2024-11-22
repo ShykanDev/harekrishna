@@ -5,7 +5,9 @@
               <h1 class="py-8 text-4xl font-bold text-center shadow-lg text-slate-900 font-poppins">
   Preguntas y Respuestas de <span class="text-amber-800">Hare Krishna</span>  <span class="underline decoration-cyan-600"></span> <span class="text-cyan-600"></span>
 </h1>
-
+<article class="w-full">
+            <HareSlider/>
+          </article>
 
    <section class="p-4 mb-8 font-poppins">
 
@@ -265,6 +267,7 @@
 </template>
 
 <script lang="ts" setup>
+import HareSlider from '@/components/HareSlider.vue';
 import MainLayout from '@/layouts/MainLayout.vue';
 
 

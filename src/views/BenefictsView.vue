@@ -14,11 +14,13 @@
                          <h1 class="mb-4 text-5xl font-semibold text-orange-700 font-poppins animate-fade-up">La Historia de Hare Krishna</h1>
                          <img class="w-16" src="https://storage.googleapis.com/a1aa/image/yHvcvB406qLuK5vtuhfD8q77DDYdqC7ivDtQwBvnFYaQbg5JA.jpg" alt="">
                         </div>
-                         
+                        <article class="w-full">
+            <HareSlider/>
+          </article>
                 <h3 class="mb-4 text-2xl text-slate-700 font-poppins">
                   El movimiento Hare Krishna, formalmente conocido como la Sociedad Internacional para la Conciencia de Krishna (ISKCON), fue fundado en 1966 por A.C. Bhaktivedanta Swami Prabhupada en Nueva York. Este movimiento tiene como objetivo promover la devoción a Krishna, el dios hindú, y la práctica de la meditación y el canto del maha-mantra "Hare Krishna". La misión de ISKCON es ayudar a las personas a alcanzar la paz interior, la espiritualidad, y la conexión con lo divino a través del servicio devocional y la práctica del bhakti yoga.
                 </h3>
-
+                
                 <!-- Cards para la historia de Hare Krishna -->
                 <div class="grid grid-cols-1 gap-6 mt-4 mb-8 sm:grid-cols-2 md:grid-cols-3">
                   <!-- Card 1 -->
@@ -166,6 +168,7 @@
 
 <script lang="ts" setup>
 import BenefictCard from '@/components/BenefictCard.vue';
+import HareSlider from '@/components/HareSlider.vue';
 import MainLayout from '@/layouts/MainLayout.vue';
 
 
